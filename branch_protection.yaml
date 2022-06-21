@@ -1,3 +1,4 @@
 optConfig:
   optOutStrategy: true
 action: issue
+issueFooter: This is a test instance of Allstar
