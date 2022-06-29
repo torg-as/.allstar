@@ -2,7 +2,7 @@ optConfig:
   optOutStrategy: true
 action: issue
 exemptions:
-  - user: test-user-2134
+  - user: test-user2134
     repo: problematic
     push: true
     admin: true
