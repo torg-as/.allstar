@@ -5,4 +5,4 @@ exemptions:
   - user: test-user2134
     repo: problematic
     push: true
-    admin: true
+    admin: false
