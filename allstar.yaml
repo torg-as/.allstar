@@ -3,9 +3,6 @@ optConfig:
   optSchedule:
     # happy friday, tokyo!
     timezone: America/Los_Angeles
-    actions:
-      issue: false
-      fix: true
     days:
       - friday
       - saturday
