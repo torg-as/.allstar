@@ -7,6 +7,7 @@ optConfig:
       issue: false
       fix: true
     days:
+      - friday
       - saturday
       - sunday
 issueFooter: This is a test instance of Allstar
