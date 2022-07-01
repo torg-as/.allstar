@@ -4,6 +4,7 @@ optConfig:
     # happy friday, tokyo!
     timezone: Asia/Tokyo
     actions:
+      issue: false
       fix: true
     days:
       - saturday
