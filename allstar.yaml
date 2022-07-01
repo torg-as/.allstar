@@ -1,3 +1,11 @@
 optConfig:
   optOutStrategy: true
+  optSchedule:
+    # happy friday, tokyo!
+    timezone: Asia/Tokyo
+    actions:
+      fix: true
+    days:
+      - saturday
+      - sunday
 issueFooter: This is a test instance of Allstar
