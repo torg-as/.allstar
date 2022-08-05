@@ -6,3 +6,8 @@ rules:
     method: "deny"
     actions:
       - name: "gradle/wrapper-validation-action"
+  - name: "Require that Go repos use golangci lint Action"
+    method: "require"
+    actions:
+      - name: "matoous/golangci-lint-action"
+        version: ">= 1.23.0"
