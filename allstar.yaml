@@ -9,4 +9,4 @@ optConfig:
       - saturday
       - sunday
 issueFooter: This is a test instance of Allstar
-issueRepo: ".allstar"
+# issueRepo: ".allstar"
