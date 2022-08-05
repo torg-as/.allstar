@@ -8,8 +8,8 @@ rules:
       - name: "gradle/wrapper-validation-action"
   - name: "Require that Go repos use golangci lint Action"
     repo:
-      #language:
-      #  - go
+      language:
+        - go
     method: "require"
     actions:
       - name: "matoous/golangci-lint-action"
