@@ -1,0 +1,8 @@
+optConfig:
+  optOutStrategy: true
+action: issue
+rules:
+  - name: "Deny Gradle Wrapper validation"
+    method: "deny"
+    actions:
+      - name: "gradle/wrapper-validation-action"
