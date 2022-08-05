@@ -2,10 +2,11 @@ optConfig:
   optOutStrategy: true
 action: issue
 rules:
-  - name: "Deny Gradle Wrapper validation"
+  - name: "Deny old Gradle Wrapper validation Action versions"
     method: "deny"
     actions:
       - name: "gradle/wrapper-validation-action"
+        version: "< 1.0.4"
   - name: "Require that Go repos use lint Action"
     repo:
       language:
