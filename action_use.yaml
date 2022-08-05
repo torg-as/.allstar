@@ -11,6 +11,14 @@ rules:
       language:
         - go
     method: "require"
+    count: 1
+    mustPass: true
     actions:
       - name: "matoous/golangci-lint-action"
         version: ">= 1.23.0"
+      - name: Go-linter
+        uses: Jerome1337/golint-action
+        version: ">= 1.0.2"
+      - name: GolangCI-Linter
+        uses: Mushus/golangci-linter
+        version: ">= v1.1.2"
