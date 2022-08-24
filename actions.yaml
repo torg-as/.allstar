@@ -11,7 +11,7 @@ groups:
           - name: "gradle/wrapper-validation-action"
             version: "< 1.0.4"
   - name: "Go repos"
-    repo:
+    repos:
       - language:
           - go
     rules:
