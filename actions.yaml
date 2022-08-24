@@ -1,23 +1,28 @@
 optConfig:
   optOutStrategy: true
 action: issue
-rules:
-  - name: "Deny old Gradle Wrapper validation Action versions"
-    method: "deny"
-    actions:
-      - name: "gradle/wrapper-validation-action"
-        version: "< 1.0.4"
-  - name: "Require that Go repos use lint Action"
+groups:
+  - name: "All repos"
+    rules:
+      - name: "Deny old Gradle Wrapper validation Action versions"
+        method: deny
+        priority: high
+        actions:
+          - name: "gradle/wrapper-validation-action"
+            version: "< 1.0.4"
+  - name: "Go repos"
     repo:
-      language:
-        - go
-    method: "require"
-    count: 1
-    mustPass: true
-    actions:
-      - name: "matoous/golangci-lint-action"
-        version: ">= 1.23.3"
-      - name: "Jerome1337/golint-action"
-        version: ">= 1.0.2"
-      - name: "Mushus/golangci-linter"
-        version: ">= v1.1.2"
+      - language:
+          - go
+    rules:
+      - name: "Require that Go repos use lint Action"
+        method: "require"
+        count: 1
+        mustPass: true
+        actions:
+          - name: "matoous/golangci-lint-action"
+            version: ">= 1.23.3"
+          - name: "Jerome1337/golint-action"
+            version: ">= 1.0.2"
+          - name: "Mushus/golangci-linter"
+            version: ">= v1.1.2"
