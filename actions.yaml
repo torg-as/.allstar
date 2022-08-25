@@ -12,7 +12,7 @@ groups:
             version: "< 1.0.4"
       - name: "Deny very very old Gradle Wrapper validation Action versions"
         method: deny
-        priority: high
+        priority: critical
         actions:
           - name: "gradle/wrapper-validation-action"
             version: "< 1.0.0"
