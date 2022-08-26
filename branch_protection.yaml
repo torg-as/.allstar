@@ -1,3 +1,5 @@
 optConfig:
   optOutStrategy: true
+  optOutRepos:
+    - .allstar
 action: issue
