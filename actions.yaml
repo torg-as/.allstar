@@ -49,4 +49,5 @@ groups:
           - name: Arduino-CI/action
             version: ">= 0.1.0"
       - name: "Deny default"
+        priority: low
         method: deny
