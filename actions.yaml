@@ -37,3 +37,16 @@ groups:
         mustPass: true
         actions:
           - name: actions/setup-go
+  - name: "Version tag, not release test repo"
+    repos:
+      - name: "no-release"
+    rules:
+      - name: "Allowlist good Actions"
+        method: allow
+        priority: medium
+        actions:
+          - name: actions/checkout
+          - name: Arduino-CI/action
+            version: ">= 0.1.0"
+      - name: "Deny default"
+        method: deny
