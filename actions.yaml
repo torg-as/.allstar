@@ -9,13 +9,13 @@ groups:
         priority: high
         actions:
           - name: "gradle/wrapper-validation-action"
-            version: "< 1.0.4"
+            version: "< v1.0.4"
       - name: "Deny very very old Gradle Wrapper validation Action versions"
         method: deny
         priority: critical
         actions:
           - name: "gradle/wrapper-validation-action"
-            version: "< 1.0.0"
+            version: "< v1.0.0"
   - name: "Go repos"
     repos:
       - language:
@@ -27,11 +27,11 @@ groups:
         mustPass: true
         actions:
           - name: "matoous/golangci-lint-action"
-            version: ">= 1.23.3"
+            version: ">= v1.23.3"
           - name: "Jerome1337/golint-action"
-            version: ">= 1.0.2"
+            version: ">= v1.0.2"
           - name: "Mushus/golangci-linter"
-            version: ">= v1.1.2"
+            version: ">= vv1.1.2"
       - name: "Go build"
         method: "require"
         mustPass: true
@@ -47,7 +47,7 @@ groups:
         actions:
           - name: actions/checkout
           - name: Arduino-CI/action
-            version: ">= 0.1.0"
+            version: ">= v0.1.0"
       - name: "Deny default"
         priority: low
         method: deny
