@@ -16,6 +16,12 @@ groups:
         actions:
           - name: "gradle/wrapper-validation-action"
             version: "< v1.0.0"
+      - name: "Require Scorecard Action"
+        method: require
+        priority: medium
+        actions:
+          - name: "ossf/scorecard-action"
+            version: ">= v1.1.2"
   - name: "Go repos"
     repos:
       - language:
@@ -31,7 +37,7 @@ groups:
           - name: "Jerome1337/golint-action"
             version: ">= v1.0.2"
           - name: "Mushus/golangci-linter"
-            version: ">= vv1.1.2"
+            version: ">= v1.1.2"
       - name: "Go build"
         method: "require"
         mustPass: true
